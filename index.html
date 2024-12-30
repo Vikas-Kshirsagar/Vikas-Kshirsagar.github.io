@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+    <meta
+      name="description"
+      content="Welcome to my portfolio website! I am an Application and Database Developer with a passion for building Web Applications that are efficient, reliable, and user-friendly."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Vikas Kshirsagar's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://vikas-kshirsagar.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vikas Kshirsagar's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website! I am an Application and Database Developer with a passion for building technical web applications that are efficient, reliable, and user-friendly. I also enjoy exploring the world of data security and learning how to create systems that protect and manage data effectively">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vikas Kshirsagar's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website! I am an Application and Database Developer with a passion for building technical web applications that are efficient, reliable, and user-friendly. I also enjoy exploring the world of data security and learning how to create systems that protect and manage data effectively">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Vikas Kshirsagar's Portfolio</title>
+  </head>
+
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <!-- <li class="nav-item"><a href="#skills">My Skills</a></li> -->
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hey there!, I'm, Vikas Kshirsagar</span>
+          </h1>
+          <h2 class="h2">
+            <span>Application and Database Developer,</span>
+          </h2>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            with a passion for building technical web 
+            applications that are efficient, reliable, and user-friendly.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Reach out</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Inspired by</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/stripe.svg"
+                alt="Ideacraft"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/datastax.svg"
+                alt="Golden grid"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coke.svg"
+                alt="Theia"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gm.svg"
+                alt="General motors"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shares.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shopify.svg"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/agency-elevation.svg"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/gitlab.svg"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/duolingo.svg"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coyote.svg"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/astrato.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mercado.svg"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">SecureIOT</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  An open source application to detect unencrypted traffic in real-time from smart devices and provide automated recommendations for implementing encryption to enhance network security.
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Scapy</li>
+                  <li>SQLAlchemy</li>
+                  <li>cryptography</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://github.com/Vikas-Kshirsagar/SecureIOT" target="_blank" rel="noopener" class="link"
+                    >Explore this project
+                  </a>
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/Vikas-Kshirsagar/SecureIOT"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/secure-IoT-Dashboard.webp"
+                  alt="SecureIOT Dashboard"
+                />
+              </picture>
+            </div>
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. 
+       I have linked my articles accordingly, so please update the article title, description, and link accordingly. 
+       For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. 
+      -->
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">My Articles</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    The Hidden Dangers of Unencrypted IoT Traffic
+                  </h3>
+                  <p class="article-text">
+                    The article addressed the alarming statistic that over 90% of IoT devices transmit data without encryption, 
+                    leaving them vulnerable to exploitation. The solution involved detecting unencrypted traffic and 
+                    providing device-specific encryption recommendations.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://vikas-kshirsagar.medium.com/the-hidden-dangers-of-unencrypted-iot-traffic-a7a9b5a4979e" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a>   
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/IoT-Landscape.webp"
+                  alt="IoT-Landscape"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Next articles </h3>
+                  <p class="article-text">
+                    coming soon...
+                  </p>
+                </div>
+                <div class="article-info">                              
+                </div>
+              </div>
+            </article>
+           
+            
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="h2">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                A rare find - someone whom I know personally for a long time. Vikas builds beautiful applications with security at their core. His code is like a fortress with a welcoming front door.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/a-muley.png"
+                  alt="a-muley"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">A. Muley</h3>
+                  <p class="testimonial-author-job">Program manager @Sodexo</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Vikas is an exceptional developer with a sharp eye for accessibility and simplicity. Having collaborated on numerous projects, I’ve seen firsthand his deep expertise in coding and front-end development.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/akash-k.png"
+                  alt="akash-k"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Akash K.</h3>
+                  <p class="testimonial-author-job">Developer @NYC-HRA</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Vikas is a talented artist with expertise across various media, capable of elevating any project to the next level. He’s proactive, easy to collaborate with, and truly brings ideas to life. I’d gladly work with him again.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/brian-hirsh.png"
+                  alt="Sean"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Sean</h3>
+                  <p class="testimonial-author-job">IoS Developer @LuckyDiem</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available
+              </strong>
+              <p class="contact-text">
+                I'm a software engineer who loves bringing ideas to life through code. When I'm not crafting dynamic web interfaces, 
+                you'll find me diving deep into design systems and making sure everything I build is accessible to everyone. 
+              </p>
+              <p class="contact-text">
+                I'm always excited to hear about new projects and opportunities! While I might be heads-down coding on other commitments, I make sure to read every message and will get back to you as soon as I can. Your patience means a lot!
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets/images/signatures.png"
+                alt="Vikas Kshirsagar"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/Vikas-Kshirsagar" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/vikaskshirsagar/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Codepen" href="https://vikas-kshirsagar.medium.com/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/medium.svg"
+                    alt="Codepen"
+                /></a>
+              </li>          
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - by <a target="_blank" rel="noopener" href="https://github.com/Vikas-Kshirsagar">Vikas Kshirsagar.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
